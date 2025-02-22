@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+    <style>
+        
+        .container_1 {
+            display: flex;
+        }
+        
+        .container_2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container_3 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .container_4 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .container_5 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .container_6 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .container_7 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+        }
+
+        .container_8 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .container_9 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 600px;
+            background-color: black;
+            align-items: center;
+        }
+
+
+        .container_10 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 600px;
+            background-color: black;
+            align-items: flex-start;
+        }
+
+        .container_11 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            height: 600px;
+            background-color: black;
+            align-items: flex-end;
+        }
+
+        .container_12 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            height: 600px;
+            background-color: black;
+            align-items: flex-end;
+        }
+
+        .container_13 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            height: 600px;
+            background-color: black;
+            align-items: flex-start;
+        }
+
+
+        .container_14 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            flex-direction: column;
+            height: 600px;
+            background-color: black;
+            align-items: flex-start;
+        }
+
+        
+        .container_15 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            flex-direction: column;
+            height: 600px;
+            background-color: black;
+            align-items: flex-end;
+        }
+
+        .elemento {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            color: white;
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border: 2px solid yellow;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+
+    <body>
+    <h1>no wrap - diminui a largura para caber todos na mesma linha</h1>
+    <div class="container_1">            
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>wrap - joga para a outra linha para caber todos elementos no tamanho configurado</h1>
+    <div class="container_2">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>space-between</h1>
+    <div class="container_3">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>space-evenly</h1>
+    <div class="container_4">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>space-around</h1>
+    <div class="container_5">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>flex-start</h1>
+    <div class="container_6">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>flex-end</h1>
+    <div class="container_7">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>center</h1>
+    <div class="container_8">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>center e align-items:center</h1>
+    <div class="container_9">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>center e align-items:flex-start</h1>
+    <div class="container_10">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>center e align-items:flex-end</h1>
+    <div class="container_11">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>flex-start e align-items:flex-end</h1>
+    <div class="container_12">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>flex-end e align-items:flex-start</h1>
+    <div class="container_13">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>flex direction:column e justify:end align:start</h1>
+    <div class="container_14">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+    <h1>flex direction:column e justify:start align:end</h1>
+    <div class="container_15">
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+        <div class="elemento">
+            DIV
+        </div>
+    </div>
+
+</body>
+</html>
